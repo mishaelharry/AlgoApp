@@ -65,3 +65,16 @@
       * Caching - duplicate transaction, session manage
       * DB Sharding
       * Horzital scaling
+
+
+
+Database/Storage
+    1. Caches - Redis, Memcahed
+    2. File system storage - Amazon S3
+    3. Text search engine - Elasticsearch
+    4. Data warehouse - Hadoop
+    5. Database -
+        * MySql - If that Structured data and if we need our transactions to be atomic, consistent, isolated, and durable (ACID)
+        * MongoDB, Cassandra, HBase, Couchbase - if your data lacks a structure, it cannot be represented as a table. 
+        * MongoDB, Couchbase - If we have a vast variety of attributes in our data and a vast variety of queries.
+        * Cassandra, HBase - If we have to work on an extremely large scale but have few types of queries we need to run
